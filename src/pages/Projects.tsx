@@ -2,14 +2,14 @@ import React from "react";
 import HorizontalCarousel from "../components/HorizontalCarousel";
 import { motion } from "framer-motion";
 import { Mask } from "../components/Mask";
-
+import { ThemeProvider } from "../components/ThemeContext";
 
 const Projects = () => {
   return (
-    
-    <div className = "h-full w-full bg-base-100 text-base-content dark:bg-gray-900 dark:text-gray-100">
+    <ThemeProvider>
+      <div className="h-full w-full bg-base-100 text-base-content dark:bg-gray-900 dark:text-gray-100">
         <Mask></Mask>
-         <div className="flex items-center justify-center min-h-screen px-28">
+        <div className="flex items-center justify-center min-h-screen px-28">
           <motion.div
             className="flex flex-col items-center justify-center text-center space-y-4"
             initial={{ opacity: 0 }}
@@ -19,8 +19,8 @@ const Projects = () => {
             <HorizontalCarousel />
           </motion.div>
         </div>
-     
-    </div>
+      </div>
+    </ThemeProvider>
   );
 };
 

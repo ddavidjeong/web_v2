@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import { ThemeProvider } from "../components/ThemeContext";
+import { Mask } from "../components/Mask";
 
 const About = () => {
   return (
-    <div>About</div>
-  )
-}
+    <ThemeProvider>
+      <Mask></Mask>
+      <div> About Me</div>
+    </ThemeProvider>
+  );
+};
 
-export default About
+export default About;

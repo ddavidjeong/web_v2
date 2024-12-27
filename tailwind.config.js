@@ -11,7 +11,7 @@ export default {
   },
   plugins: [require("tailwind-scrollbar-hide", "daisyui")],
   daisyui: {
-    themes: ["sunset", "fantasy"]
+    themes: ["nord", "fantasy" ]
   },
-  darkMode: ['class', '[data-theme="sunset"]']
+  darkMode: ['class', '[data-theme="nord"]']
 };

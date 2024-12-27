@@ -1,66 +1,63 @@
-import React, { useState, useEffect, FC } from "react";
+import React, { useContext, FC } from "react";
 import { motion } from "framer-motion";
+import { ThemeContext } from "./ThemeContext";
+import Switch from "./switch";
+import FlipLink from "./animations/FlipLink";
 
 interface FlipLinkProps {
   children: string;
   href: string;
+  className?: string;
 }
 
 export const Mask: FC = () => {
-  const [theme, setTheme] = useState<string>("sunset"); // Default theme
+  const themeContext = useContext(ThemeContext);
 
-  const toggleTheme = (): void => {
-    const newTheme =
-      theme === "sunset" ? "fantasy" : "sunset";
-    setTheme(newTheme);
-    document.documentElement.setAttribute(
-      "data-theme",
-      newTheme
-    ); // Set the theme dynamically
+  if (!themeContext) {
+    throw new Error("ThemeContext must be used within a ThemeProvider");
+  }
+
+  const { theme, toggleTheme } = themeContext;
+
+  // Function to handle theme toggle
+  const handleThemeToggle = (checked: boolean) => {
+    const newTheme = checked ? "nord" : "fantasy";
+    toggleTheme();
+    document.documentElement.setAttribute("data-theme", newTheme);
   };
-
-  useEffect(() => {
-    // Apply the initial theme when the component mounts
-    document.documentElement.setAttribute(
-      "data-theme",
-      theme
-    );
-  }, [theme]);
 
   return (
     <div className="container mx-auto px-4">
       {/* Header Section */}
       <motion.div
-        className="fixed top-0 left-0 right-0 flex justify-between items-center p-6 z-10"
+        className="fixed top-0 left-0 right-0 flex justify-between items-center p-6 z-10 bg-base-100 dark:bg-gray-900"
         initial={{ y: -50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, ease: "easeOut" }}
       >
-        {/* Top-middle theme button */}
+        {/* Top-middle theme toggle */}
         <motion.div
           className="absolute top-4 left-1/2 transform -translate-x-1/2"
           transition={{ duration: 0.3, ease: "easeInOut" }}
         >
-          <motion.button
-            onClick={toggleTheme}
-            className="btn btn-secondary transition duration-500 ease-in-out transform hover:scale-105"
-          >
-            Switch Theme
-          </motion.button>
+          <Switch
+            checked={theme === "fantasy"}
+            onCheckedChange={handleThemeToggle}
+          />
         </motion.div>
 
         {/* Top-left name */}
-        <div className="text-primary text-2xl font-bold dark:text-yellow-400">
+        <div className="text-primary text-2xl font-bold dark:text-yellow-300">
           <FlipLink href="/">David Jeong</FlipLink>
         </div>
 
         {/* Top-right about link */}
-        <FlipLink href="/about">About</FlipLink>
+        <FlipLink href="/about" className="text-secondary dark:text-yellow-300">About</FlipLink>
       </motion.div>
 
       {/* Bottom Section (Fixed to follow scroll) */}
       <motion.div
-        className="fixed bottom-0 left-0 right-0 flex justify-between items-center p-6 z-10 container mx-auto"
+        className="fixed bottom-0 left-0 right-0 flex justify-between items-center p-6 z-10 w-full bg-base-100 dark:bg-gray-900"
         initial={{ y: 50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.7, ease: "easeOut" }}
@@ -72,16 +69,20 @@ export const Mask: FC = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 1, ease: "easeInOut" }}
         >
-          {["Projects", "Notes", "Resume", "Contact"].map(
-            (item, index) => (
-              <FlipLink
-                key={index}
-                href={`/${item.toLowerCase()}`}
-              >
-                {item}
-              </FlipLink>
-            )
-          )}
+          {[
+            "Projects",
+            "Notes",
+            "Resume",
+            "Contact"
+          ].map((item, index) => (
+            <FlipLink
+              key={index}
+              href={`/${item.toLowerCase()}`}
+              className="dark:text-yellow-300"
+            >
+              {item}
+            </FlipLink>
+          ))}
         </motion.div>
 
         {/* Footer Info */}
@@ -99,73 +100,3 @@ export const Mask: FC = () => {
   );
 };
 
-
-
-
-const DURATION = 0.25;
-const STAGGER = 0.025;
-
-const FlipLink: FC<FlipLinkProps> = ({
-  children,
-  href,
-}) => {
-  return (
-    <motion.a
-      initial="initial"
-      whileHover="hovered"
-      href={href}
-      className="relative block overflow-hidden whitespace-nowrap text-lg font-bold uppercase sm:text-xl md:text-2xl lg:text-3xl"
-      style={{
-        lineHeight: 1,
-      }}
-    >
-      <div>
-        {children.split("").map((l, i) => (
-          <motion.span
-            variants={{
-              initial: {
-                y: 0,
-              },
-              hovered: {
-                y: "-100%",
-              },
-            }}
-            transition={{
-              duration: DURATION,
-              ease: "easeInOut",
-              delay: STAGGER * i,
-            }}
-            className="inline-block"
-            key={i}
-          >
-            {l}
-          </motion.span>
-        ))}
-      </div>
-      <div className="absolute inset-0">
-        {children.split("").map((l, i) => (
-          <motion.span
-            variants={{
-              initial: {
-                y: "100%",
-              },
-              hovered: {
-                y: 0,
-                color: "#FFBF00",
-              },
-            }}
-            transition={{
-              duration: DURATION,
-              ease: "easeInOut",
-              delay: STAGGER * i * 1.4,
-            }}
-            className="inline-block"
-            key={i}
-          >
-            {l}
-          </motion.span>
-        ))}
-      </div>
-    </motion.a>
-  );
-};
