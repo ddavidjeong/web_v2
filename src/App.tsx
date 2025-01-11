@@ -15,7 +15,6 @@ function App() {
       <Route path="/projects" element={<Pages.Projects />} />
       <Route path="/blogs" element={<Pages.Blogs />} />
       <Route path="/resume" element={<Pages.Resume />} />
-      <Route path="/contact" element={<Pages.Contact />} />
     </Routes>
   </Router>
   );

@@ -5,8 +5,9 @@ export default {
     extend: {
      
       colors: {
-        navy: "#00274C",
-        yellow: "#FFCB05",
+        'navy': "#00274C",
+        'yellow': "#FFCB05",
+        'ceramic': "#FFFFF3"
       },
     },
   },

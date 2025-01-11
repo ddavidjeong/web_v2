@@ -31,7 +31,7 @@ const ImageItem = ({ item, index, isActive, handleClick }: Props) => {
     <img
       id={`item-${index}`}
       key={index}
-      className={`w-[300px] h-[500px] object-cover inline-block p-4 cursor-pointer 
+      className={`w-[300px] h-[500px] object-cover inline-block px-4 cursor-pointer 
            filter grayscale hover:filter-none ease-in-out duration-300 
             ${
               isActive
@@ -57,7 +57,7 @@ const HorizontalCarousel = () => {
     <div className="relative flex items-center overflow-hidden">
       <div
         id="slider"
-        className="py-10 overflow-x-scroll whitespace-nowrap scrollbar-hide"
+        className="overflow-x-scroll whitespace-nowrap scrollbar-hide"
       >
         {images.map((item, index) => (
           <ImageItem

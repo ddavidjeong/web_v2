@@ -1,5 +1,4 @@
 import React from "react";
-import Polygons from "./Polygons";
 
 const Header = () => {
   return (
