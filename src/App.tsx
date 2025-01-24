@@ -11,10 +11,13 @@ function App() {
   <Router>
     <Routes>
       <Route path="/" element={<Pages.Home />} />
-      <Route path="/about" element={<Pages.About />} />
+
+|    <Route path="/about" element={<Pages.About />} />
       <Route path="/projects" element={<Pages.Projects />} />
-      <Route path="/blogs" element={<Pages.Blogs />} />
       <Route path="/resume" element={<Pages.Resume />} />
+
+      {/* <Route path="/contact" element={<Pages.PageNotFound/>} /> */}
+      <Route path="*" element={<Pages.PageNotFound/>} />
     </Routes>
   </Router>
   );

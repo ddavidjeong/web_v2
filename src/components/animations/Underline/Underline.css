@@ -1,0 +1,24 @@
+.menu-item {
+    transition: color 0.3s; /* Transition for color change on hover */
+  }
+  
+  .menu-item:hover {
+    color: #ffffff; /* White color on hover */
+  }
+  
+  .menu-item:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px; /* Thickness of the hover underline */
+    background: #ce4f20; /* Color of the hover underline */
+    transform: scaleX(0); /* Initially hidden */
+    transition: transform 0.3s; /* Smooth transition for the effect */
+  }
+  
+  .menu-item:hover:before {
+    transform: scaleX(1); /* Full width on hover */
+  }
+  

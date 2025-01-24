@@ -1,3 +1,53 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Proxima-Regular";
+    src: url("../src/assets/fonts/proxima-nova/proximanova-regular.tff")
+      format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @keyframes slideshow {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+  }
+  
+
+  @font-face {
+    font-family: "Proxima-Bold-Italic";
+    src: url("../src/assets/fonts/proxima-nova/proximanova_boldit.otf")
+      format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Proxima-Bold";
+    src: url("../src/assets/fonts/proxima-nova/proximanova_bold.otf")
+      format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Standard-Bold";
+    src: url("../src/assets/fonts/standard-font/webfonts/standard-bold-webfont.woff")
+        format("woff"),
+      url("../src/assets/fonts/standard-font/webfonts/standard-bold-webfont.woff2")
+        format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Standard";
+    src: url("../src/assets/fonts/standard-font/webfonts/standard-book-webfont.woff")
+        format("woff"),
+      url("../src/assets/fonts/standard-font/webfonts/standard-book-webfont.woff2")
+        format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+}
