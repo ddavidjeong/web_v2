@@ -1,0 +1,40 @@
+.home-link {
+    position: relative;
+    display: inline-block;
+    font-size: 15px;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    text-decoration: none;
+    overflow: hidden;
+    white-space: nowrap;
+    min-width: calc(1ch * 10);
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.home-link::after {
+    content: attr(data-hover-text);
+    position: absolute;
+    top: 0;
+    left: 100%; /* Start after the existing content */
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    color: #ffffff;
+    transition: width 0.5s steps(10), color 0.5s ease; /* Adjust the steps for more/less typing effect */
+    animation: none; /* Initially no animation */
+    opacity: 0;
+}
+
+.home-link:hover::after {
+    width: 100%; /* Adjust width on hover to show full text */
+    left: 0; /* Move back to the start of the link */
+    opacity: 1;
+    animation: typing 0.3s steps(10) forwards; /* Activate animation on hover */
+}
+
+/* Keyframes for typing animation */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}

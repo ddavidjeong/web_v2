@@ -1,52 +1,44 @@
-import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
-import IntroCard from "../components/IntroCard";
-import logo from "../assets/spacelogo.png";
-import Underline from "../components/animations/Underline/Underline";
-
+import React, { useRef } from "react";
+import About from "./About";
+import Resume from "./Resume";
+import Cover from "./Cover";
+import Contact from "./Contact";
+import Projects from "./Projects";
+import StickyHeader from "../components/StickyHeader";
 
 const Home = () => {
+  const coverRef = useRef(null);
+  const aboutRef = useRef(null);
+  const resumeRef = useRef(null);
+  const projectsRef = useRef(null);
+  const contactRef = useRef(null);
+
   return (
-    <div>
-      <div className="bg-neutral-900 h-screen p-8">
-        <div className="grid grid-cols-12">
-          <div className="col-span-3 p-4  hover:shadow-lg  hover:bg-slate-200 duration-300 ">
-            {/* profile card */}
-            <div className="text-[100px]"><Underline text="LOGO"/></div>
+    <>
+      {/* Pass these refs to StickyHeader so it can trigger scroll */}
+      <StickyHeader
+        aboutRef={aboutRef}
+        resumeRef={resumeRef}
+        projectsRef={projectsRef}
+        contactRef={contactRef}
+      />
 
-            {/* <img src={logo} alt="logo" /> */}
-          </div>
-          <div className="col-span-5 p-4 hover:shadow-lg  hover:bg-stone-200 duration-300 "> <div className="text-[100px]">CENTER</div></div>
-          {/* body */}
-
-          <div className="col-span-4">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{
-                duration: 2,
-                ease: "easeInOut",
-              }}
-            >
-              <IntroCard />
-            </motion.div>
-          </div>
-        </div>
-            
-          
-
-        <div className="m-10 fixed bottom-0 right-0">
-          <div className="text-right text-6xl text-stone-400 font-proxima-regular">
-            <div className=" hover:text-stone-600 duration-200">
-              linkedin
-            </div>
-            <div className=" hover:text-stone-600 duration-200">
-              github
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+      <section ref={coverRef}>
+        <Cover />
+      </section>
+      <section ref={aboutRef}>
+        <About />
+      </section>
+      <section ref={resumeRef}>
+        <Resume />
+      </section>
+      <section ref={projectsRef}>
+        <Projects />
+      </section>
+      <section ref={contactRef}>
+        <Contact />
+      </section>
+    </>
   );
 };
 
