@@ -1,19 +1,34 @@
 import React from "react";
 import { ThemeProvider } from "../components/ThemeContext";
 import { motion } from "framer-motion";
+import car_bg from "../media/nature_plains.jpg";
 
 const About = () => {
   return (
-    <div className="bg-zinc-500 h-screen ">
+    <div className="bg-f-primary-1">
       <div className="p-8 grid grid-cols-12">
-        <div className="col-span-4 p-4">
-          <div className="text-white text-7xl font-bold hover:text-amber-50 duration-300">
-            [ ABT ]
+
+        <div
+          style={{ backgroundImage: `url(${car_bg})` }}
+          className="col-span-5  bg-cover h-52" 
+        >
+          <div
+            className="bg-f-primary-1"
+            style={{ height: "62px" }}
+          >
+            <span
+              style={{ backgroundImage: `url(${car_bg})` }}
+              className="bg-clip-text text-transparent text-7xl font-bold hover:text-amber-50 duration-300"
+            >
+              about me
+            </span>
           </div>
         </div>
-        <div className="col-span-4 p-4 hover:shadow-lg  hover:bg-stone-200 duration-300 ">
-          {" "}
-          <div className="text-[100px] "> MC</div>
+
+
+
+        <div className="col-span-3 p-4 hover:shadow-lg  hover:bg-stone-200 duration-300 ">
+          <div className="text-[10px] "> filler</div>
         </div>
         {/* body */}
         <div className="col-span-4 p-4 hover:shadow-lg  hover:bg-stone-200 duration-300">
@@ -33,28 +48,11 @@ const About = () => {
                 ease: "easeInOut",
               }}
             >
-              <div className="font-light">
-                <p className="mb-6 ">
-                  Hi! My name is David and I am a
-                  recent-graduate from Cornell University
-                  that enjoys building reliable, efficient,
-                  and user-friendly applications.
-                </p>
+              <div className="font-light text-white">
+                
                 <p className="mb-6"></p>
                 <p className="mb-6">
-                  To summarize a little bit about me and my
-                  background, my academic journey is
-                  characterized by a diverse trajectory,
-                  where it actually began in Architecture,
-                  where I spent all day and night at my
-                  studio aiming to master the instersection
-                  of form and function. Throughout this
-                  period, I progressively became convinced
-                  of technology's intricate role in our
-                  world and its continued prominence in the
-                  future, and with having a minor background
-                  in CS before, I transitioned into pursuing
-                  it as my main form of study.
+                  To summarize a little bit about me:
                 </p>
                 <p className="mb-6">
                   {" "}
@@ -70,11 +68,7 @@ const About = () => {
                   that shape our daily lives.
                 </p>
                 <p className="mb-6">
-                  I built this website to showcase any
-                  recent projects I'm working on, any
-                  thoughts or ideas I've had recently, and
-                  also to show some of the creative work
-                  I've worked on in the past. In my spare
+                  In my spare
                   time, you can usually find me watching old
                   football film, cycling, or working on some
                   kind of app to make my life a little

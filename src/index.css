@@ -3,6 +3,13 @@
 @tailwind utilities;
 
 @layer base {
+  .font-outline-2 {
+    -webkit-text-stroke: 2px black;
+  }
+  .font-outline-3 {
+    -webkit-text-stroke: 3px black;
+  }
+
   @font-face {
     font-family: "Proxima-Regular";
     src: url("../src/assets/fonts/proxima-nova/proximanova-regular.tff")
@@ -12,10 +19,13 @@
   }
 
   @keyframes slideshow {
-    0% { transform: translateX(0%); }
-    100% { transform: translateX(-50%); }
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
   }
-  
 
   @font-face {
     font-family: "Proxima-Bold-Italic";

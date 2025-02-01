@@ -6,7 +6,7 @@ import Res from "../components/static/Res";
 const Resume = () => {
   return (
     
-      <div className="bg-zinc-200 h-screen">
+      <div className="bg-slate-500 h-screen">
         <div className="p-8 grid grid-cols-12">
           <div className="col-span-4 p-4  ">
           <div className="text-stone-800 text-7xl font-bold hover:text-stone-400 duration-300">

@@ -20,7 +20,7 @@ function StickyHeader({
     sectionRef: React.MutableRefObject<HTMLOptionElement | null>
   ) => {
     if (sectionRef && sectionRef.current) {
-      const yOffset = -56;
+      const yOffset = -55;
       const elementPosition =
         sectionRef.current.getBoundingClientRect().top;
       const offset =
@@ -50,7 +50,7 @@ function StickyHeader({
       className={`
       fixed w-full 
       transition-all duration-500 ease-in-out 
-      bg-zinc-100
+      bg-f-primary-4
       z-50
       ${
         isSticky
@@ -59,35 +59,24 @@ function StickyHeader({
       }
     `}
     >
-      <div className="grid grid-cols-3 text-center py-4">
-        <div className="col-span-1">1</div>
-        <div className="col-span-1">2</div>
-        <div className="col-span-1">
+      <div className="grid grid-cols-1 text-center py-4">
+        <div
+          className="col-span-1 font-bold text-white
+"
+        >
           <nav>
-            <a
-              className="text-black hover:underline mx-2"
-              onClick={() => handleScrollTo(aboutRef)}
-            >
-              About
+            <a className="mx-2 hover:underline " onClick={() => handleScrollTo(aboutRef)}>
+              about
             </a>
-            <a
-              className="text-black hover:underline mx-2"
-              onClick={() => handleScrollTo(resumeRef)}
-            >
-              Experience
+            <a className="mx-2 hover:underline " onClick={() => handleScrollTo(resumeRef)}>
+              experience
             </a>
 
-            <a
-              className="text-black hover:underline mx-2"
-              onClick={() => handleScrollTo(projectsRef)}
-            >
-              Projects
+            <a className="mx-2 hover:underline " onClick={() => handleScrollTo(projectsRef)}>
+              projects
             </a>
-            <a
-              className="text-black hover:underline mx-2"
-              onClick={() => handleScrollTo(contactRef)}
-            >
-              Contact
+            <a className="mx-2 hover:underline " onClick={() => handleScrollTo(contactRef)}>
+              contact
             </a>
           </nav>
         </div>

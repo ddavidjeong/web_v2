@@ -10,7 +10,7 @@ function IntroCard() {
   return (
     <div className="p-4  hover:shadow-lg  hover:bg-stone-200 duration-300 ease-in-out">
       <div className="font-sans text-[32px] text-stone-90000 transition-opacity opacity-70 hover:opacity-100 duration-300 ease-in-out">
-        DAVID JEONG
+        David Jeong
       </div>
       <div className="font-sans text-stone-600 text-[17px]">
         Software Engineer{" "}
