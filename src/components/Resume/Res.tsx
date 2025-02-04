@@ -1,14 +1,13 @@
 import React from "react";
-import ResumeCard from "./ResumeCard";
+import ResumeCard from "../static/ResumeCard";
 import { Resume } from "../../pages";
 
 function Res() {
   return (
     <div>
-      <div className="mb-4">
+      <div className="mb-4 p-5 hover:bg-white hover:bg-opacity-50 hover:shadow-md rounded-md duration-200">
         <ResumeCard
           company="Blue Mountain"
-          city="Fremont, CA"
           title="Software Engineer Intern"
           date="June 2023 – August 2023"
           descriptions={[
@@ -24,10 +23,9 @@ function Res() {
           ]}
         />
       </div>
-      <div className="mb-4">
+      <div className="mb-4 p-5 hover:bg-white hover:bg-opacity-50 hover:shadow-md rounded-md duration-200">
         <ResumeCard
           company="Kay Family & Cosmetic Dentistry"
-          city="Fremont, CA"
           title="Web Developer"
           date="June 2022 – December 2022"
           descriptions={[

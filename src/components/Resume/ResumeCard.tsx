@@ -3,7 +3,6 @@ import React from "react";
 
 interface ResumeCardProps {
   company: string;
-  city: string;
   title: string;
   date: string;
   descriptions: string[];
@@ -12,14 +11,13 @@ interface ResumeCardProps {
 
 const ResumeCard: React.FC<ResumeCardProps> = ({
   company,
-  city,
   title,
   date,
   descriptions,
   stack,
 }) => {
   return (
-    <div className="grid grid-cols-2 mb-16">
+    <div className="grid grid-cols-2 ">
       <div className="col-span-1 font-bold">
         {company}
       </div>
@@ -28,7 +26,7 @@ const ResumeCard: React.FC<ResumeCardProps> = ({
       <div className="col-span-1 italic font-light">
         {title}
       </div>
-      <div className="col-span-1 italic flex justify-end">{city}</div>
+      
 
       <ul className="col-span-full font-light list-disc list-inside">
         {descriptions.map((desc, index) => (

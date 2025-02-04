@@ -1,5 +1,5 @@
-import { section } from "motion/react-client";
 import React, { useState, useEffect } from "react";
+import Underline from "./animations/Underline/Underline";
 
 interface StickyHeaderProps {
   aboutRef: React.MutableRefObject<HTMLOptionElement | null>;
@@ -59,27 +59,40 @@ function StickyHeader({
       }
     `}
     >
-      <div className="grid grid-cols-1 text-center py-4">
-        <div
-          className="col-span-1 font-bold text-white
-"
-        >
-          <nav>
-            <a className="mx-2 hover:underline " onClick={() => handleScrollTo(aboutRef)}>
-              about
+      <div className="grid grid-cols-3 text-center py-4">
+        <div className="col-span-1" />
+
+        <div className="col-span-1 font-bold">
+          <nav className="flex justify-center text-white">
+            <a
+              className="mx-3 hover:text-lime-100 duration-200"
+              onClick={() => handleScrollTo(aboutRef)}
+            >
+              <Underline text="ABOUT" />
             </a>
-            <a className="mx-2 hover:underline " onClick={() => handleScrollTo(resumeRef)}>
-              experience
+            <a
+              className="mx-3 hover:text-lime-100 duration-20"
+              onClick={() => handleScrollTo(resumeRef)}
+            >
+              <Underline text="EXPERIENCE" />
             </a>
 
-            <a className="mx-2 hover:underline " onClick={() => handleScrollTo(projectsRef)}>
-              projects
+            <a
+              className=" mx-3 hover:text-lime-100 duration-20"
+              onClick={() => handleScrollTo(projectsRef)}
+            >
+              <Underline text="PROJECTS" />
             </a>
-            <a className="mx-2 hover:underline " onClick={() => handleScrollTo(contactRef)}>
-              contact
+            <a
+              className=" mx-3 hover:text-lime-100 duration-20"
+              onClick={() => handleScrollTo(contactRef)}
+            >
+              <Underline text="CONTACT" />
             </a>
           </nav>
         </div>
+
+        <div className="col-span-1" />
       </div>
     </header>
   );

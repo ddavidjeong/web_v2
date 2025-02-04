@@ -62,14 +62,14 @@ function Cover() {
               <div className="row-span-1 pl-2 hover:text-transparent duration-200">
                 i'm david.
               </div>
-              <div className="row-span-1 pl-20 hover:text-transparent duration-200">
+              <div className="row-span-1 text-right hover:text-transparent duration-200">
                 a software developer
               </div>
               <div className="row-span-2 pl-64  text-lg font-light text-right">
                 focused on refining user experiences through
-                <br /> thoughtful and intuitive design,
-                practical and efficient solutions,    <br />and
-              reliable development practices.
+                thoughtful and <br /> intuitive design,
+                practical and efficient solutions, <br />
+                and reliable development practices.
               </div>
             </section>
           </motion.div>

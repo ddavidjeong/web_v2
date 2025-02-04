@@ -1,24 +1,31 @@
-.menu-item {
-    transition: color 0.3s; /* Transition for color change on hover */
-  }
-  
-  .menu-item:hover {
-    color: #ffffff; /* White color on hover */
-  }
-  
-  .menu-item:before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 3px; /* Thickness of the hover underline */
-    background: #ce4f20; /* Color of the hover underline */
-    transform: scaleX(0); /* Initially hidden */
-    transition: transform 0.3s; /* Smooth transition for the effect */
-  }
-  
-  .menu-item:hover:before {
-    transform: scaleX(1); /* Full width on hover */
-  }
-  
+body {
+    display: inline-block;
+}
+
+.text_underline {
+  cursor: pointer;
+  position: relative;
+}
+
+
+.text_underline::after, .text_underline::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background: rgb(235, 255, 231);
+  transition: 200ms ease-out;
+}
+
+.text_underline::before {
+    right: 50%
+}
+.text_underline::after {
+    left: 50%
+}
+
+.text_underline:hover::after, .text_underline:hover::before {
+  width: 50%;
+}
+
