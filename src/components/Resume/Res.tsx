@@ -1,5 +1,5 @@
 import React from "react";
-import ResumeCard from "../static/ResumeCard";
+import ResumeCard from "./ResumeCard";
 import { Resume } from "../../pages";
 
 function Res() {

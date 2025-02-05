@@ -2,27 +2,54 @@ import React from "react";
 
 function Whiteboard() {
   return (
-    <div className="grid grid-cols-4">
-      <div className="col-span-1 grid grid-cols-4">
-            <div className="font-bold italic text-center">2020</div>
-            <div className="font-light text-md">
+    <div className="grid grid-cols-6">
+      <div className="col-span-1 grid grid-cols-5">
+        <div className="col-span-4 relative top-1/3">
+            <div className="font-bold italic text-center">
+              2020
+            </div>
+            <div className="font-light text-center text-md">
               <div>June - August</div>
             </div>
+        </div>
 
-        <div className="border-r-4 border-black h-full z-29">
-          <div className="w-5 h-5 bg-gray-500 rounded-full z-30"></div>
+        <div className="col-span-1 relative h-full border-l-4 border-black z-29">
+          <div className="absolute w-5 h-5  bg-black rounded-full z-30 hover:border-f-primary-4 hover:border-2 duration-75" style={{right: "80%", top:"40%"}}></div>
         </div>
       </div>
 
-      <div className="col-span-3">
-        <div className="font-bold">Proyecto 1</div>
-        <div className="italic">Empresa 1</div>
-        <div className="mb-10">
-          Fusce auctor gravida dui, ut tristique nisi
-          aliquam quis. Maecenas id ligula ac dui mollis
-          tempor. Sed vitae ex eros. Proin nisl felis,
-          consectetur sed elit sed, vestibulum ultrices
-          nibh.
+
+
+      <div className="col-span-5">
+        <div className=" font-bold">Blue Mountain</div>
+
+        <div className="italic font-light">
+          Software Engineer Intern
+        </div>
+
+        <ul className="font-light list-disc list-inside">
+          <li>
+            Developed a data integration solution for
+            private healthcare practices, centralizing
+            patient data from disparate sources using MySQL
+            and Node.js
+          </li>
+          <li>
+            Streamlined marketing efforts by creating
+            automation scripts (triggered and drip
+            sequences) with Nodemailer
+          </li>
+          <li>
+            Designed and implemented a geovisualization tool
+            to map patients using Leaflet.js and D3.js to
+            enhance targeted advertising campaigns
+          </li>
+        </ul>
+
+        <div className="mt-4">
+          <span className="bg-gray-200 rounded px-2 py-1 text-xs">
+            React
+          </span>
         </div>
       </div>
     </div>
