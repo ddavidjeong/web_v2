@@ -28,7 +28,7 @@ const About = () => {
           {/* <div className="text-[10px] "> filler</div> */}
         </div>
         {/* body */}
-        <div className="col-span-6 p-4 font-light text-white">
+        <div className="col-span-6 p-4 font-light opacity-90 text-white">
           <p className="mb-6">
             To summarize a little bit about me:
           </p>

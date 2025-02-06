@@ -59,7 +59,7 @@ function StickyHeader({
       }
     `}
     >
-      <div className="grid grid-cols-3 text-center py-4">
+      <div className="grid grid-cols-3 text-center py-3">
         <div className="col-span-1" />
 
         <div className="col-span-1 font-bold">

@@ -1,28 +1,39 @@
 import React from "react";
-import HorizontalCarousel from "../components/HorizontalCarousel";
-import { motion } from "framer-motion";
-import ProfileCard from "../components/static/ProfileCard";
-
+import car_bg from "../media/mountain.jpg";
+import ProjectInputs from "../components/Projects/ProjectInputs";
+import UnderlineRight from "../components/animations/Underline/UnderlineRight";
 
 const Projects = () => {
   return (
-    
-    <div className="bg-white">
-    <div className="p-8 grid grid-cols-12">
-      <div className="col-span-4 p-4  ">
-      <div className="text-stone-800 text-7xl font-bold hover:text-stone-400 duration-300">
-          [ PRO ]
+    <div className="bg-navy ">
+      <div className="p-8 grid grid-cols-12">
+        <div className="text-white col-span-7 p-4 pr-4">
+          <ProjectInputs />
+          <div className="text-white hover:text-teal-100 font-bold">
+            <UnderlineRight text="Full Project Archive ->"/>
+          </div>
+        </div>
+        {/* body */}
+        <div className="col-span-1"></div>
+
+        <div
+          style={{ backgroundImage: `url(${car_bg})` }}
+          className="col-span-4  bg-cover h-full"
+        >
+          <div
+            className="bg-white"
+            style={{ height: "62px" }}
+          >
+            <span
+              style={{ backgroundImage: `url(${car_bg})` }}
+              className="bg-clip-text text-black text-7xl font-bold hover:text-transparent duration-300"
+            >
+              projects
+            </span>
+          </div>
         </div>
       </div>
-      <div className="col-span-8 p-5 hover:shadow-lg  hover:bg-slate-300 duration-300 ">
-        <HorizontalCarousel></HorizontalCarousel>
-      </div>
-      {/* body */}
-      {/* <div className="col-span-3 p-4 hover:shadow-lg  hover:bg-stone-200 duration-300">
-        <div className="text-[100px]"> EN</div>
-      </div> */}
     </div>
-  </div>
   );
 };
 

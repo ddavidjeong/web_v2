@@ -12,6 +12,8 @@ export default {
         "f-primary-2": "rgb(62, 123, 39)",
         "f-primary-3": "rgb(133, 169, 71)",
         "f-primary-4": "rgb(114, 151, 98)",
+        "f-secondary-1": "rgb(231, 240, 220)",
+        
 
         "f-alt-1": "rgb(239, 227, 194)",
         "f-alt-2": "rgb(236, 223, 204)",

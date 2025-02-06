@@ -1,0 +1,30 @@
+body {
+    display: inline-block;
+}
+
+.text_underline {
+  cursor: pointer;
+  position: relative;
+}
+
+
+.text_underline::after  {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background: rgb(255, 255, 255);
+  transition: 200ms ease-out;
+}
+/* 
+.text_underline::before {
+    right: 50%
+} */
+/* .text_underline::after {
+    left: 20%
+} */
+
+.text_underline:hover::after {
+  width: 100%;
+}
