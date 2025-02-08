@@ -12,16 +12,16 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   stack,
 }) => {
   return (
-    <div className="grid grid-cols-9">
-      <div className="col-span-2 ">
-        <div className="mt-4">
+    <div className="grid grid-cols-9 group p-4 mb-5 hover:bg-white hover:bg-opacity-20 hover:shadow-lg rounded-md duration-200">
+      <div className="col-span-2">
+        <div className="">
           project icon/link
         </div>
       </div>
 
-      <div className="col-span-6 p-3 mb-16 hover:bg-white hover:bg-opacity-20 hover:shadow-lg rounded-md duration-200">
-        <div className="hover:text-teal-100 duration-200">{title}</div>
-        <ul className="font-light mt-4">
+      <div className="col-span-5">
+        <div className="group-hover:text-teal-100 duration-200 text-[16px]">{title}</div>
+        <ul className="font-light text-[14px] opacity-80 mt-2 ">
           {descriptions.map((desc, index) => (
             <li key={index}>{desc}</li>
           ))}
@@ -31,7 +31,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           {stack.map((tech, index) => (
             <span
               key={index}
-              className="bg-gray-200 rounded-2xl mr-3 px-3 py-1 text-xs"
+              className="bg-s-a-1 text-black rounded-2xl mr-3 px-3 py-1 text-xs"
             >
               {tech}
             </span>

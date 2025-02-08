@@ -50,7 +50,7 @@ function StickyHeader({
       className={`
       fixed w-full 
       transition-all duration-500 ease-in-out 
-      bg-f-primary-4
+      bg-zinc-900/90 backdrop-blur-sm
       z-50
       ${
         isSticky
@@ -59,35 +59,35 @@ function StickyHeader({
       }
     `}
     >
-      <div className="grid grid-cols-3 text-center py-3">
+      <div className="grid grid-cols-3 text-center py-4">
         <div className="col-span-1" />
 
-        <div className="col-span-1 font-bold">
+        <div className="col-span-1 font-light">
           <nav className="flex justify-center text-white">
             <a
-              className="mx-3 hover:text-lime-100 duration-200"
+              className="mx-3 hover:text-stone-300 duration-200"
               onClick={() => handleScrollTo(aboutRef)}
             >
-              <Underline text="ABOUT" />
+              <Underline text="about" />
             </a>
             <a
-              className="mx-3 hover:text-lime-100 duration-20"
+              className="mx-3 hover:text-stone-300 duration-200"
               onClick={() => handleScrollTo(resumeRef)}
             >
-              <Underline text="EXPERIENCE" />
+              <Underline text="experience" />
             </a>
 
             <a
-              className=" mx-3 hover:text-lime-100 duration-20"
+              className=" mx-3 hover:text-stone-300 duration-200"
               onClick={() => handleScrollTo(projectsRef)}
             >
-              <Underline text="PROJECTS" />
+              <Underline text="projects" />
             </a>
             <a
-              className=" mx-3 hover:text-lime-100 duration-20"
+              className=" mx-3 hover:text-stone-300 duration-200"
               onClick={() => handleScrollTo(contactRef)}
             >
-              <Underline text="CONTACT" />
+              <Underline text="contact" />
             </a>
           </nav>
         </div>

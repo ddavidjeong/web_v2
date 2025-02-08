@@ -20,7 +20,7 @@ const ResumeCard: React.FC<ResumeCardProps> = ({
   stack,
 }) => {
   return (
-    <div className="grid grid-cols-10">
+    <div className="grid grid-cols-10 text-white">
       <div className="col-span-2 grid grid-cols-8">
         <div className="col-span-7 relative mt-4">
           <div className="font-bold italic text-center">
@@ -33,19 +33,17 @@ const ResumeCard: React.FC<ResumeCardProps> = ({
           </div>
         </div>
 
-        <div className="col-span-1 mt-4 relative h-full border-l-2 border-black z-29">
+        <div className="col-span-1 mt-4 relative h-full border-l-2 border-white z-29">
           <div
-            className="absolute w-4 h-4  bg-black rounded-full z-30 hover:border-f-primary-4 hover:border-2 duration-75"
-            style={{ right: "12px" }}
+            className="absolute w-4 h-4  bg-white rounded-full z-30 hover:border-f-primary-4 hover:border-2 duration-75"
+            style={{ right: "9px" }}
           ></div>
         </div>
       </div>
 
-      <div className="col-span-8 opacity-80 p-3 mb-16 hover:bg-white hover:bg-opacity-50 hover:shadow-md rounded-md duration-200">
-        <div className=" font-bold">{company}</div>
-
+      <div className="col-span-8 text-gray-200 p-3 mb-16 group hover:bg-gray-400 hover:bg-opacity-10 hover:shadow-md rounded-md duration-200">
+        <div className="font-bold group-hover:text-white duration-200">{company}</div>
         <div className="italic font-light">{title}</div>
-
         <ul className="font-light list-disc list-inside">
           {descriptions.map((desc, index) => (
             <li key={index}>{desc}</li>
@@ -56,7 +54,7 @@ const ResumeCard: React.FC<ResumeCardProps> = ({
           {stack.map((tech, index) => (
             <span
               key={index}
-              className="bg-gray-200 rounded-2xl mr-3 px-3 py-1 text-xs"
+              className="bg-s-a-1 text-black rounded-2xl mr-3 px-3 py-1 text-xs"
             >
               {tech}
             </span>

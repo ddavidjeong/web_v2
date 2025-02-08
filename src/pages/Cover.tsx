@@ -6,15 +6,15 @@ import car_bg from "../media/nature_plains.jpg";
 
 function Cover() {
   return (
-    <div className="bg-f-alt-3 h-screen p-8">
+    <div className="bg-s-p-1 h-screen p-8">
       <div className="grid grid-cols-12">
         <div className="col-span-5">
-          <div
+          {/* <div
             style={{ backgroundImage: `url(${car_bg})` }}
             className="bg-cover h-screen"
           >
             <div
-              className="bg-f-alt-3"
+              className="bg-s-p-1"
               style={{ height: "63px" }}
             >
               <span
@@ -26,7 +26,7 @@ function Cover() {
                 hi there.
               </span>
               <br />
-              <div className="text-f-primary-2 text-7xl font-bold duration-200">
+              <div className="text-s-a-1 text-7xl font-bold duration-200">
                 <div className="hover:text-f-primary-1 duration-200">
                   welcome <br />
                 </div>
@@ -38,7 +38,7 @@ function Cover() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
         {/* <div className="col-span-1 "> FILLER MIDDLE
         </div> */}
@@ -56,11 +56,11 @@ function Cover() {
               style={{
                 backgroundImage: `url(${car_bg})`,
               }}
-              className="grid grid-rows-5  bg-clip-text bg-cover text-7xl font-bold text-f-primary-4"
+              className="grid grid-rows-5  bg-clip-text bg-cover text-7xl font-bold text-white"
             >
               <div className="row-span-1"></div>
               <div className="row-span-1 pl-2 hover:text-transparent duration-200">
-                i'm david.
+                hi! i'm david.
               </div>
               <div className="row-span-1 text-right hover:text-transparent duration-200">
                 a software developer
@@ -77,13 +77,13 @@ function Cover() {
       </div>
 
       {/* bottom links */}
-      <div className="m-10 absolute bottom-0 right-0">
-        <div className="text-right text-6xl text-f-primary-3 font-bold">
+      <div className="m-10 absolute bottom-0 left-0">
+        <div className=" text-6xl text-white opacity-90 font-bold">
           <div className=" hover:text-f-primary-1 duration-200">
-            linkedin
+            <a href="https://www.linkedin.com/in/davidsjeo/" target="_blank" rel="noopener noreferrer" className="cursor-pointer">linkedin</a>
           </div>
           <div className=" hover:text-f-primary-1 duration-200">
-            github
+          <a href="https://github.com/ddavidjeong/" target="_blank" rel="noopener noreferrer" className="cursor-pointer">github</a>
           </div>
         </div>
       </div>

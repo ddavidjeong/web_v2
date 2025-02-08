@@ -13,9 +13,7 @@ function App() {
       <Route path="/" element={<Pages.Home />} />
       <Route path="/wb" element={<Pages.Whiteboard />} />
 
-|    <Route path="/about" element={<Pages.About />} />
-      <Route path="/projects" element={<Pages.Projects />} />
-      <Route path="/resume" element={<Pages.Resume />} />
+      <Route path="/project_archive" element={<Pages.ProjectArchive />} />
 
       {/* <Route path="/contact" element={<Pages.PageNotFound/>} /> */}
       <Route path="*" element={<Pages.PageNotFound/>} />

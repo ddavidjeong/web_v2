@@ -12,9 +12,9 @@ body {
   content: "";
   position: absolute;
   bottom: 0;
-  height: 2px;
+  height: 1px;
   width: 0;
-  background: rgb(235, 255, 231);
+  background: rgb(254, 255, 251);
   transition: 200ms ease-out;
 }
 

@@ -17,10 +17,11 @@ function Res() {
             "Designed and implemented a geovisualization tool to map patients using Leaflet.js and D3.js to enhance targeted advertising campaigns",
           ]}
           stack={[
-            "React",
+            "Python",
             "Node.js",
-            "PostgreSQL",
-            "TailwindCSS",
+            "MySQL",
+            "D3.js",
+            "Leaflet",
           ]}
         />
         <ResumeCard
@@ -30,19 +31,19 @@ function Res() {
           date_month_end="December"
           date_year="2022"
           descriptions={[
-            "Developed and deployed a dynamic website for a dental practice using React, Node.js and MySQL, focusing on real-time appointment scheduling integrated with OpenDental API",
+            "Developed and deployed a dynamic website for a dental practice using React, Node.js and Postgres, focusing on real-time appointment scheduling integrated with OpenDental API",
             "Designed responsive landing pages for Google Ads campaigns and optimized ad spending, resulting in a 32% increase in conversion rates",
           ]}
           stack={[
             "React",
             "Node.js",
             "PostgreSQL",
-            "TailwindCSS",
+            "Bootstrap",
           ]}
         />
         <div
             className="relative mt-2"
-            style={{ width: "0", height:"0", borderLeft: "5px solid transparent", borderRight: "5px solid transparent", borderTop:"16px solid black", left:"136px" }}
+            style={{ width: "0", height:"0", borderLeft: "5px solid transparent", borderRight: "5px solid transparent", borderTop:"16px solid white", left:"118px" }}
           ></div>
         
     </div>

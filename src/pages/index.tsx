@@ -5,3 +5,4 @@ export { default as Resume } from "./Resume";
 export { default as Contact } from "./Contact";
 export { default as PageNotFound } from "./PageNotFound";
 export { default as Whiteboard } from "./Whiteboard";
+export { default as ProjectArchive } from "./ProjectArchive";

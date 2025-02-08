@@ -7,6 +7,11 @@ export default {
         navy: "#00274C",
         yellow: "#FFCB05",
         ceramic: "#FFFFF3",
+        "s-p-1": "rgb(30, 32, 30)",
+        "s-p-2":"rgb(40, 41, 40)",
+        "s-p-3":"rgb(60, 61, 55)",
+        "s-a-1":"rgb(236, 223, 204)",
+        "s-a-2":"rgb(250, 245, 240",
 
         "f-primary-1": "rgb(18, 53, 36)",
         "f-primary-2": "rgb(62, 123, 39)",
