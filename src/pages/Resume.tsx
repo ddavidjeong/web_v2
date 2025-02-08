@@ -24,17 +24,15 @@ const Resume = () => {
               experience
             </span>
             <div className="col-span-1 relative">
-              <div className="absolute bottom-1 right-0 text-zinc-200 hover:text-white duration-200">
-                <a
-                  href="/resume.pdf"
-                  target="_blank"
-                  className="text-white text-6xl"
-                >
-                  
-                  <Arrow text="full resume" />
-                </a>
+              <a
+                href="/resume.pdf"
+                target="_blank"
                 
-              </div>
+              >
+                <div className="absolute bottom-1 right-0 text-zinc-200 hover:text-white duration-200">
+                  <Arrow text="full resume" />
+                </div>
+              </a>
             </div>
           </div>
 
