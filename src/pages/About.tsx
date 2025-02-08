@@ -1,5 +1,4 @@
 import React from "react";
-import { ThemeProvider } from "../components/ThemeContext";
 import { motion } from "framer-motion";
 import car_bg from "../media/mountain.jpg";
 
