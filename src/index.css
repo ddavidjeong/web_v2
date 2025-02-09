@@ -61,3 +61,8 @@
     font-style: normal;
   }
 }
+
+html,body{
+    overscroll-behavior: auto;
+    background: #1E201E;
+}
