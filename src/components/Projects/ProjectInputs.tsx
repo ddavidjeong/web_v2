@@ -3,8 +3,8 @@ import ProjectCard from "./ProjectCard";
 
 function ProjectInputs() {
   return (
-    <div>
-        <a href="https://github.com/ddavidjeong/web_v2" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+    <div style={{  borderTop: "1px solid rgb(120, 120, 120, .2)" }}>
+        <a href="https://github.com/ddavidjeong/web_v2" target="_blank" rel="noopener noreferrer" className="cursor-pointer ">
           <ProjectCard
             title="Personal Website"
             descriptions={[

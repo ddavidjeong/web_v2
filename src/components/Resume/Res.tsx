@@ -43,7 +43,7 @@ function Res() {
         />
         <div
             className="relative mt-2"
-            style={{ width: "0", height:"0", borderLeft: "5px solid transparent", borderRight: "5px solid transparent", borderTop:"16px solid white", left:"118px" }}
+            style={{ width: "0", height:"0", borderLeft: "5px solid transparent", borderRight: "5px solid transparent", borderTop:"16px solid white", left:"120px" }}
           ></div>
         
     </div>

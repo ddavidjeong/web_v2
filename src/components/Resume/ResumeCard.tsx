@@ -35,16 +35,16 @@ const ResumeCard: React.FC<ResumeCardProps> = ({
 
         <div className="col-span-1 mt-4 relative h-full border-l-2 border-white z-29">
           <div
-            className="absolute w-4 h-4  bg-white rounded-full z-30 hover:border-f-primary-4 hover:border-2 duration-75"
+            className="absolute w-4 h-4  bg-white rounded-full z-30 hover:border-s-a-1 hover:border-2 duration-75"
             style={{ right: "9px" }}
           ></div>
         </div>
       </div>
 
-      <div className="col-span-8 text-gray-200 p-3 mb-16 group hover:bg-gray-400 hover:bg-opacity-10 hover:shadow-md rounded-md duration-200">
+      <div className="col-span-8 text-gray-200 p-3 mb-16 group hover:bg-white hover:bg-opacity-10 hover:shadow-lg rounded-md duration-200">
         <div className="font-bold group-hover:text-white duration-200">{company}</div>
-        <div className="italic font-light">{title}</div>
-        <ul className="font-light list-disc list-inside">
+        <div className="font-light">{title}</div>
+        <ul className="font-light opacity-80 list-disc list-inside">
           {descriptions.map((desc, index) => (
             <li key={index}>{desc}</li>
           ))}
