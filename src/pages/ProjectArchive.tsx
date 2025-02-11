@@ -1,13 +1,14 @@
 import React from 'react'
-import car_bg from '../media/nature_plains.jpg'
 import Arrow from '../components/animations/ArrowLink/Arrow'
 import ProjectInputs from '../components/Projects/ProjectInputs'
 import DataProjectInputs from '../components/Projects/DataProjectInputs'
 import { Link } from 'react-router-dom'
+import ScrollToTop from '../components/animations/ScrollToTop'
 
 function ProjectArchive() {
   return (
     <div className="bg-s-p-1 p-8 grid grid-cols-4">
+        <ScrollToTop/>
     <div className="col-span-1"></div>
     <div className="text-white col-span-2">
         <span

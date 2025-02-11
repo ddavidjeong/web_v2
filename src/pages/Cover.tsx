@@ -34,11 +34,7 @@ const Cover = () => {
             <div className="text-md font-light text-line text-line-8">
               This is my personal website, a space I created
               where you can learn a little bit more about
-              me. I mainly share my projects and my work
-              here, but I'm also planning on using this space to write
-              blog posts where I tinker with new ideas or
-              to simply share interesting things I've learned
-              recently.
+              me. 
             </div>
 
             <svg className="arrows text-line text-line-9">
