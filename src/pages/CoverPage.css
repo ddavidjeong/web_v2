@@ -1,0 +1,100 @@
+/* CoverPage.css */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .text-line {
+    opacity: 0;
+    animation: fadeIn 0.8s ease forwards;
+  }
+  
+  .text-line-1 {
+    animation-delay: 0.5s;
+  }
+  
+  .text-line-2 {
+    animation-delay: 1.4s;
+  }
+  
+  .text-line-3 {
+    animation-delay: 2.4s;
+  }
+  
+  .text-line-4 {
+    animation-delay: 3s;
+  }
+  
+  .text-line-5 {
+    animation-delay: 3.6s;
+  }
+  
+  .text-line-6 {
+    animation-delay: 4.2s;
+  }
+  
+  .text-line-7 {
+    animation-delay: 4.8s;
+  }
+  
+  .text-line-8 {
+    animation-delay: 5.8s;
+  }
+  .text-line-9 {
+    animation-delay:7.5s;
+  }
+  
+
+  .arrows {
+	width: 60px;
+	height: 72px;
+	position: absolute;
+	left: 50%;
+	margin-left: -30px;
+	bottom: 70px;
+}
+
+.arrows path {
+	stroke: #ffffff;
+	fill: transparent;
+	stroke-width: 1px;	
+	animation: arrow 2s 4;
+	-webkit-animation: arrow 2s infinite; 
+}
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+	animation-delay:-1s;
+	-webkit-animation-delay:-1s; /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+	animation-delay:-0.5s;
+	-webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {	
+	animation-delay:0s;
+	-webkit-animation-delay:0s; /* Safari 和 Chrome */
+}

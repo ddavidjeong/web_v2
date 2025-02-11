@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 export default function FillerBody() {
   return (
     <div className="px-14 space-y-8">
+
       {Array.from({ length: 20 }).map((_, index) => (
         <motion.p
           key={index}

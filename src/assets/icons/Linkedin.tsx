@@ -3,7 +3,7 @@ import React from "react";
 function Linkedin() {
   return (
     <a
-      className="flex hover:text-slate-200 duration-200"
+      className="flex hover:text-slate-200 transition duration-200"
       href="https://www.linkedin.com/in/davidsjeo/"
       target="_blank"
       rel="noreferrer noopener"

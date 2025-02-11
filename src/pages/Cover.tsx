@@ -1,94 +1,57 @@
 import React from "react";
-import Underline from "../components/animations/Underline/Underline";
-import { motion } from "framer-motion";
-import IntroCard from "../components/IntroCard";
-import car_bg from "../media/nature_plains.jpg";
+import "./CoverPage.css";
 
-function Cover() {
+const Cover = () => {
   return (
     <div className="bg-s-p-1 h-screen p-8">
-      <div className="grid grid-cols-12">
-        <div className="col-span-5">
-          {/* <div
-            style={{ backgroundImage: `url(${car_bg})` }}
-            className="bg-cover h-screen"
-          >
-            <div
-              className="bg-s-p-1"
-              style={{ height: "63px" }}
-            >
-              <span
-                style={{
-                  backgroundImage: `url(${car_bg})`,
-                }}
-                className="bg-clip-text bg-cover text-transparent text-7xl font-bold hover:text-f-primary-3 duration-300"
-              >
-                hi there.
-              </span>
-              <br />
-              <div className="text-s-a-1 text-7xl font-bold duration-200">
-                <div className="hover:text-f-primary-1 duration-200">
-                  welcome <br />
-                </div>
-                <div className="hover:text-f-primary-1 duration-200">
-                  to my <br />
-                </div>
-                <div className="hover:text-f-primary-1 duration-200">
-                  website.
-                </div>
-              </div>
+      <div className="grid grid-cols-4">
+        <div className="col-span-1"></div>
+        <div className="col-span-2">
+          <section className="text-white">
+            <div className="font-bold text-5xl pt-12 pb-12 text-line text-line-1">
+              hi! welcome to my website.{" "}
             </div>
-          </div> */}
-        </div>
-        {/* <div className="col-span-1 "> FILLER MIDDLE
-        </div> */}
+            <div className="font-bold text-5xl pb-12 text-line text-line-2">
+              my name is david.
+            </div>
+            <div className="font-bold text-5xl text-line text-line-3">
+              i'm...
+            </div>
+            <div className="font-bold text-5xl indent italic text-line text-line-4">
+              <span className="not-italic">a </span >software
+              engineer
+            </div>
+            <div className="font-bold text-5xl indent italic text-line text-line-5">
+              <span className="not-italic">a </span>designer
+            </div>
+            <div className="font-bold text-5xl indent italic text-line text-line-6">
+              <span className="not-italic">a </span>thinker
+            </div>
+            <div className="font-bold text-5xl indent italic text-line text-line-7 pb-16">
+              <span className="not-italic">and a </span>
+              lifelong student.
+            </div>
+            <div className="text-md font-light text-line text-line-8">
+              This is my personal website, a space I created
+              where you can learn a little bit more about
+              me. I mainly share my projects and my work
+              here, but I'm also planning on using this space to write
+              blog posts where I tinker with new ideas or
+              to simply share interesting things I've learned
+              recently.
+            </div>
 
-        <div className="col-span-7">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{
-              duration: 2,
-              ease: "easeInOut",
-            }}
-          >
-            <section
-              style={{
-                backgroundImage: `url(${car_bg})`,
-              }}
-              className="grid grid-rows-5  bg-clip-text bg-cover text-7xl font-bold text-white"
-            >
-              <div className="row-span-1"></div>
-              <div className="row-span-1 pl-2 hover:text-transparent duration-200">
-                hi! i'm david.
-              </div>
-              <div className="row-span-1 text-right hover:text-transparent duration-200">
-                a software developer
-              </div>
-              <div className="row-span-2 pl-64  text-lg font-light text-right">
-                focused on refining user experiences through
-                thoughtful and <br /> intuitive design,
-                practical and efficient solutions, <br />
-                and reliable development practices.
-              </div>
-            </section>
-          </motion.div>
+            <svg className="arrows text-line text-line-9">
+							<path className="a1" d="M0 0 L30 32 L60 0"></path>
+							<path className="a2" d="M0 20 L30 52 L60 20"></path>
+							<path className="a3" d="M0 40 L30 72 L60 40"></path>
+						</svg>
+          </section>
         </div>
-      </div>
-
-      {/* bottom links */}
-      <div className="m-10 absolute bottom-0 left-0">
-        <div className=" text-6xl text-white opacity-90 font-bold">
-          <div className=" hover:text-f-primary-1 duration-200">
-            <a href="https://www.linkedin.com/in/davidsjeo/" target="_blank" rel="noopener noreferrer" className="cursor-pointer">linkedin</a>
-          </div>
-          <div className=" hover:text-f-primary-1 duration-200">
-          <a href="https://github.com/ddavidjeong/" target="_blank" rel="noopener noreferrer" className="cursor-pointer">github</a>
-          </div>
-        </div>
+        <div className="col-span-1"></div>
       </div>
     </div>
   );
-}
+};
 
 export default Cover;

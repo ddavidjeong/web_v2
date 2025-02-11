@@ -4,6 +4,7 @@ import Resume from "./Resume";
 import Cover from "./Cover";
 import Contact from "./Contact";
 import Projects from "./Projects";
+import Footer from "./Footer";
 import StickyHeader from "../components/StickyHeader";
 
 const Home = () => {
@@ -38,6 +39,7 @@ const Home = () => {
       <section ref={contactRef}>
         <Contact />
       </section>
+      <section><Footer/></section>
     </>
   );
 };

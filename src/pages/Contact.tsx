@@ -2,27 +2,47 @@ import React from "react";
 import Github from "../assets/icons/Github";
 import Linkedin from "../assets/icons/Linkedin";
 import Codepen from "../assets/icons/Codepen";
+import Instagram from "../assets/icons/Instagram";
 
 const Contact = () => {
   return (
-    <div className="bg-s-p-2">
+    <div className="bg-s-p-1">
       <div className="p-8 grid grid-cols-4">
-        <div className="col-span-1 p-4  "></div>
-        <div className="col-span-2 ">
-          <div className="text-white text-4xl font-bold hover:text-stone-400 duration-300"></div>
-          
-          
-          
+        <div className="col-span-1"></div>
 
-          <div className="text-white text-center text-[14px] font-light">
-            
-            <div className="pb-2">
-              <span className="opacity-60">Built with</span> <span className= "opacity-90 hover:text-fuchsia-300 hover:opacity-100 hover:font-extrabold duration-200">love</span> <span className="opacity-60">by yours truly</span> 
-            </div>
-            <div className="opacity-60">© 2025 | David Jeong</div>
+        {/* body */}
+        <div className="col-span-2  font-light opacity-90 text-white">
+          <div className="bg-s-p-1 mb-6" style={{}}>
+            <span className="bg-clip-text text-white text-3xl font-bold hover:text-transparent duration-300">
+              let's connect!
+            </span>
+          </div>
+          <div className="font-light pb-4">
+            feel free to contact me through any of my social
+            links or send me an email. 
+          </div>
+          <div className="flex">
+            <span className=" mr-4">
+              <Github />
+            </span>
+            <span className=" mr-4">
+              <Linkedin />
+            </span>
+
+            <span className=" mr-4">
+              <Codepen />
+            </span>
+            <span className=" mr-4">
+              <Instagram />
+            </span>
+          </div>
+          <div className="font-light pt-2 pb-2">
+            davidsjeo@gmail.com
           </div>
         </div>
-        <div className="col-span-1"></div>
+        <div className="col-span-1">
+          {/* <div className="text-[10px] "> filler</div> */}
+        </div>
       </div>
     </div>
   );
