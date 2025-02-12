@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Background = () => {
   const baseUrl = "http://www.testomic.com/public/codepen-assets/img/paralax";
 

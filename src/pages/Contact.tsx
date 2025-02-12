@@ -1,4 +1,3 @@
-import React from "react";
 import Github from "../assets/icons/Github";
 import Linkedin from "../assets/icons/Linkedin";
 import Codepen from "../assets/icons/Codepen";

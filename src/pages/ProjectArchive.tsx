@@ -1,4 +1,3 @@
-import React from 'react'
 import Arrow from '../components/animations/ArrowLink/Arrow'
 import ProjectInputs from '../components/Projects/ProjectInputs'
 import DataProjectInputs from '../components/Projects/DataProjectInputs'

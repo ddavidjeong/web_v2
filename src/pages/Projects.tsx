@@ -1,4 +1,3 @@
-import React from "react";
 import car_bg from "../media/mountain.jpg";
 import ProjectInputs from "../components/Projects/ProjectInputs";
 import Arrow from "../components/animations/ArrowLink/Arrow";

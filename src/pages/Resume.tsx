@@ -1,4 +1,3 @@
-import React from "react";
 import Res from "../components/Resume/ResumeInputs";
 import car_bg from "../media/mountain.jpg";
 import Arrow from "../components/animations/ArrowLink/Arrow";

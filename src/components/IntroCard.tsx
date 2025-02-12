@@ -1,6 +1,4 @@
-import React from "react";
 import Navbar from "./static/Navbar";
-import TextSlideIn from "./animations/TextSlideIn";
 
 // border
 // className="border border-opacity-75  hover:border-stone-400">

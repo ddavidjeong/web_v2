@@ -1,4 +1,3 @@
-import React from "react";
 import FlipLink from "../animations/FlipLink";
 
 function Navbar() {

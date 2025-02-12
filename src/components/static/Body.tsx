@@ -1,6 +1,4 @@
-import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-// import { Mask } from "./Mask";
 
 function Body() {
   return (
@@ -60,7 +58,7 @@ function Body() {
         </p>
       </div>
     </motion.p>
-  );
+     );
 }
 
 export default Body;
