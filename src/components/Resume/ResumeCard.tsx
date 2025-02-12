@@ -8,6 +8,8 @@ interface ResumeCardProps {
   date_month_end: string;
   date_year: string;
   stack: string[];
+  timeline_rect_height: number;
+  last_card: boolean
 }
 
 const ResumeCard: React.FC<ResumeCardProps> = ({
@@ -18,11 +20,13 @@ const ResumeCard: React.FC<ResumeCardProps> = ({
   date_month_end,
   date_year,
   stack,
+  timeline_rect_height,
+  last_card
 }) => {
   return (
-    <div className="grid grid-cols-10 text-white">
-      <div className="col-span-2 grid grid-cols-8">
-        <div className="col-span-7 relative mt-4">
+    <div className="md:grid md:grid-cols-10 text-white">
+      <div className="hidden md:col-span-2 md:grid md:grid-cols-8">
+        <div className="md:col-span-7 relative mt-4">
           <div className="font-bold italic text-center">
             {date_year}
           </div>
@@ -33,16 +37,43 @@ const ResumeCard: React.FC<ResumeCardProps> = ({
           </div>
         </div>
 
-        <div className="col-span-1 mt-4 relative h-full border-l-2 border-white z-29">
-          <div
-            className="absolute w-4 h-4  bg-white rounded-full z-30 hover:border-s-a-1 hover:border-2 duration-75"
-            style={{ right: "9px" }}
-          ></div>
+
+        <div className="md:col-span-1  ">
+          <svg
+            width="20" 
+            height="100" 
+            xmlns="http://www.w3.org/2000/svg"
+            className="md:h-full md:my-auto relative z-40" 
+          >
+            <rect
+              width="2"
+              height="1000" 
+              x="9" 
+              y={timeline_rect_height}
+              fill="white"
+            />
+            <circle cx="10" cy="25" r="10" fill="white" />
+            {last_card && ( <polygon
+              points="10,297 17,275 3,275"
+              fill="white"
+            />)}
+           
+          </svg>
         </div>
+        
+
+       
       </div>
 
-      <div className="col-span-8 text-gray-200 p-3 mb-16 group hover:bg-white hover:bg-opacity-10 hover:shadow-lg rounded-md duration-200">
-        <div className="font-bold group-hover:text-white duration-200">{company}</div>
+      {/* mobile dates */}
+      <div className=" md:hidden font-light opacity-70 text-white">
+        {date_month_start} - {date_month_end} {date_year}{" "}
+      </div>
+
+      <div className="relative z-10 md:col-span-8 text-gray-200 md:p-3 mb-16 group hover:bg-white hover:bg-opacity-10 hover:shadow-lg rounded-md duration-200">
+        <div className="font-bold group-hover:text-white duration-200">
+          {company}
+        </div>
         <div className="font-light">{title}</div>
         <ul className="font-light opacity-80 list-disc list-inside">
           {descriptions.map((desc, index) => (
@@ -50,7 +81,7 @@ const ResumeCard: React.FC<ResumeCardProps> = ({
           ))}
         </ul>
 
-        <div className="mt-4">
+        <div className="mt-4 flex">
           {stack.map((tech, index) => (
             <span
               key={index}

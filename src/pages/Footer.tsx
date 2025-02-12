@@ -17,7 +17,7 @@ function Footer() {
           <div className="text-white text-center text-[14px] font-light">
             
             <div className="pb-2">
-              <span className="opacity-60">Built with</span> <span className= "opacity-90 hover:text-fuchsia-300 hover:opacity-100 hover:font-extrabold duration-200">love</span> <span className="opacity-60">by yours truly</span> 
+              <span className="opacity-60">Built with</span> <span className= "opacity-90 hover:text-fuchsia-300 hover:opacity-100 hover:font-extrabold duration-200">love</span> <span className="opacity-60">by me!</span> 
             </div>
             <div className="opacity-60">© 2025 | David Jeong</div>
           </div>

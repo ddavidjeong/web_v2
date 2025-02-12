@@ -1,35 +1,32 @@
 import React from "react";
-import ProfileCard from "../components/static/ProfileCard";
-import { motion } from "framer-motion";
-import Res from "../components/Resume/Res";
+import Res from "../components/Resume/ResumeInputs";
 import car_bg from "../media/mountain.jpg";
-import Underline from "../components/animations/Underline/Underline";
 import Arrow from "../components/animations/ArrowLink/Arrow";
 
 const Resume = () => {
   return (
-    <div className="bg-s-p-1 pb-8 ">
-      <div className="p-8 grid grid-cols-4">
-        <div className="col-span-1"></div>
+    <div className="bg-s-p-1 pb-8">
+      <div className="p-4 md:p-8 grid grid-cols-1 md:grid-cols-4">
+        {/* left column */}
+        <div className="md:col-span-1"></div>
 
-        <div className="col-span-2 pr-4">
+        {/* desktop main column */}
+        <div className="col-span-1 md:col-span-2 md:pr-4">
           <div
-            className="bg-s-p-1 mb-8 grid grid-cols-2"
+            className="bg-s-p-1 mb-8 md:grid md:grid-cols-2"
             style={{}}
           >
             <span
               style={{ backgroundImage: `url(${car_bg})` }}
-              className="bg-clip-text col-span-1 text-white text-6xl font-bold hover:text-transparent duration-300"
+              className="bg-clip-text md:col-span-1 text-white md:text-6xl text-5xl font-bold hover:text-transparent duration-300"
             >
               experience
             </span>
-            <div className="col-span-1 relative">
-              <a
-                href="/resume.pdf"
-                target="_blank"
-                
-              >
-                <div className="absolute bottom-1 right-0 text-zinc-200 hover:text-white duration-200">
+
+            {/* arrow anchor link for desktop */}
+            <div className="md:col-span-1 relative">
+              <a href="/resume.pdf" target="_blank">
+                <div className="md:absolute md:bottom-1 md:right-0 text-zinc-200 hover:text-white duration-200">
                   <Arrow text="full resume" />
                 </div>
               </a>
@@ -37,9 +34,12 @@ const Resume = () => {
           </div>
 
           <Res></Res>
+          
+          
         </div>
-        {/* body */}
-        <div className="col-span-1 "></div>
+
+        {/* right column */}
+        <div className="md:col-span-1 "></div>
       </div>
     </div>
   );

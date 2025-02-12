@@ -6,8 +6,8 @@ import Instagram from "../assets/icons/Instagram";
 
 const Contact = () => {
   return (
-    <div className="bg-s-p-1">
-      <div className="p-8 grid grid-cols-4">
+    <div className="bg-s-p-1 ">
+      <div className="p-8 grid grid-cols-1 md:grid-cols-4">
         <div className="col-span-1"></div>
 
         {/* body */}
@@ -19,7 +19,7 @@ const Contact = () => {
           </div>
           <div className="font-light pb-4">
             feel free to contact me through any of my social
-            links or send me an email. 
+            links or simply send me an email. 
           </div>
           <div className="flex">
             <span className=" mr-4">

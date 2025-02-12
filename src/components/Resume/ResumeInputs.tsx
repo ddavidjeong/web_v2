@@ -1,6 +1,5 @@
 import React from "react";
 import ResumeCard from "./ResumeCard";
-import { Resume } from "../../pages";
 
 function Res() {
   return (
@@ -23,6 +22,8 @@ function Res() {
             "D3.js",
             "Leaflet",
           ]}
+          timeline_rect_height={20}
+          last_card={false}
         />
         <ResumeCard
           company="Kay Family & Cosmetic Dentistry"
@@ -40,11 +41,10 @@ function Res() {
             "PostgreSQL",
             "Bootstrap",
           ]}
+          timeline_rect_height={0}
+          last_card={true}
         />
-        <div
-            className="relative mt-2"
-            style={{ width: "0", height:"0", borderLeft: "5px solid transparent", borderRight: "5px solid transparent", borderTop:"16px solid white", left:"118px" }}
-          ></div>
+       
         
     </div>
   );

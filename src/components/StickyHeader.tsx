@@ -48,7 +48,7 @@ function StickyHeader({
   return (
     <header
       className={`
-      fixed w-full 
+      fixed w-full md 
       transition-all duration-500 ease-in-out 
       bg-zinc-900/90 backdrop-blur-sm
       z-50
