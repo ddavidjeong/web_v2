@@ -70,7 +70,7 @@ const ResumeCard: React.FC<ResumeCardProps> = ({
         {date_month_start} - {date_month_end} {date_year}{" "}
       </div>
 
-      <div className="relative z-10 md:col-span-8 text-gray-200 md:p-3 mb-16 group hover:bg-white hover:bg-opacity-10 hover:shadow-lg rounded-md duration-200">
+      <div className="relative z-10 md:col-span-8 text-gray-200 md:p-3 mb-16 group md:hover:bg-white md:hover:bg-opacity-10 md:hover:shadow-lg rounded-md duration-200">
         <div className="font-bold group-hover:text-white duration-200">
           {company}
         </div>

@@ -36,7 +36,7 @@ const Cover = () => {
             where you can learn a little bit more about me.
           </div>
 
-          <svg className="arrows w-6 h-6 md:w-8 md:h-8 text-line text-line-9">
+          <svg className="hidden md:block arrows w-6 h-6 md:w-8 md:h-8 text-line text-line-9">
             <path
               className="a1"
               d="M0 0 L30 32 L60 0"
