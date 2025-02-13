@@ -81,11 +81,11 @@ const ResumeCard: React.FC<ResumeCardProps> = ({
           ))}
         </ul>
 
-        <div className="mt-4 flex">
+        <div className="mt-4 flex flex-wrap gap-3">
           {stack.map((tech, index) => (
             <span
               key={index}
-              className="bg-s-a-1 text-black rounded-2xl mr-3 px-3 py-1 text-xs"
+              className="bg-s-a-1 text-black rounded-2xl px-3 py-1 text-xs"
             >
               {tech}
             </span>

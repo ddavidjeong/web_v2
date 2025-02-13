@@ -6,10 +6,10 @@ import ScrollToTop from '../components/animations/ScrollToTop'
 
 function ProjectArchive() {
   return (
-    <div className="bg-s-p-1 p-8 grid grid-cols-4">
+    <div className="bg-s-p-1 p-4 md:p-8 md:grid md:grid-cols-4">
         <ScrollToTop/>
-    <div className="col-span-1"></div>
-    <div className="text-white col-span-2">
+    <div className="md:col-span-1"></div>
+    <div className="text-white col-span-1 md:col-span-2">
         <span
           className="bg-clip-text text-white text-4xl font-bold hover:text-transparent duration-300"
         >
@@ -17,10 +17,8 @@ function ProjectArchive() {
         </span>
 
         <div className="relative text-zinc-200">
-          <div className="absolute bottom-1 right-0  hover:text-white duration-200">
-            {/* <Underline text="project archive" /> */}
+          <div className="md:absolute md:bottom-1 right-0  hover:text-white duration-200">
             <Link to="/">
-                  
                 <Arrow text="back to home"></Arrow>
             </Link>
           </div>
@@ -34,7 +32,7 @@ function ProjectArchive() {
       <DataProjectInputs />
     </div>
     {/* body */}
-    <div className="col-span-1"></div>
+    <div className="md:col-span-1"></div>
   </div>
   )
 }

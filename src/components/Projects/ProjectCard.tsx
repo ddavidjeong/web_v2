@@ -18,20 +18,20 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       <div
         className=""
       >
-        <div className="group-hover:text-teal-100 duration-200 text-[16px]">
+        <div className="text-white opacity-85 group-hover:opacity-100 duration-200 text-[16px]">
           {title}
         </div>
-        <ul className="font-light text-[14px] opacity-80 mt-2 ">
+        <ul className="font-light text-[14px] opacity-75 mt-2 ">
           {descriptions.map((desc, index) => (
             <li key={index}>{desc}</li>
           ))}
         </ul>
 
-        <div className="mt-4">
+        <div className="mt-4 flex flex-wrap gap-3">
           {stack.map((tech, index) => (
             <span
               key={index}
-              className="bg-s-a-1 text-black rounded-2xl mr-3 px-3 py-1 text-xs"
+              className="bg-s-a-1 text-black rounded-2xl px-3 py-1 text-xs"
             >
               {tech}
             </span>
