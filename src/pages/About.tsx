@@ -53,7 +53,7 @@ const About = () => {
             full-stack development and data analysis. If you
             know of any opportunities or simply want to have
             a quick chat, please feel free to contact me at
-            davidsjeo@outlook.com or through any of my 
+            davidsjeo@gmail.com or through any of my 
             <a href=""> social links.</a>
           </p>
         </div>
