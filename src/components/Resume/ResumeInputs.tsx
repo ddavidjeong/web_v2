@@ -10,7 +10,7 @@ function Res() {
         date_month_end="August"
         date_year="2023"
         descriptions={[
-          "Developed a data integration solution for private healthcare practices, centralizing patient data from various sources using Postgres and Node.js",
+          "Developed a data integration solution for private healthcare practices, centralizing patient data from various sources using MySQL and Node.js",
           "Streamlined marketing efforts by creating automation scripts (triggered and drip sequences) with Nodemailer",
           "Designed and implemented a geovisualization tool to map patients using Leaflet.js and D3.js to enhance targeted advertising campaigns",
         ]}
