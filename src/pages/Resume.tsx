@@ -31,6 +31,7 @@ const Resume = () => {
               </a>
             </div>
           </div>
+          
 
           <Res></Res>
           

@@ -3,7 +3,7 @@ import ProjectCard from './ProjectCard'
 function DataProjectInputs() {
   return (
     <div style={{  borderTop: "1px solid rgb(120, 120, 120, .2)" }}>
-        <a href="https://github.com/ddavidjeong/web_v2" target="_blank" rel="noopener noreferrer" className="cursor-pointer ">
+        <a href="https://github.com/ddavidjeong" target="_blank" rel="noopener noreferrer" className="cursor-pointer ">
           <ProjectCard
             title="Film Marketing Data Analysis"
             descriptions={[
@@ -11,7 +11,7 @@ function DataProjectInputs() {
             stack={["Python", "Pandas", "scikit-learn", "seaborn"]}
           />
       </a>
-      <a href="https://github.com/Unazhang/College-Music-Trending" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+      <a href="https://github.com/ddavidjeong" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
           <ProjectCard
             title="Transformer-based LLM"
             descriptions={[
@@ -21,7 +21,7 @@ function DataProjectInputs() {
           />
       </a>
 
-      <a href="https://github.com/Unazhang/College-Music-Trending" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+      <a href="https://github.com/ddavidjeong" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
           <ProjectCard
             title="Language Detector"
             descriptions={[
@@ -32,7 +32,7 @@ function DataProjectInputs() {
       </a>
 
 
-      <a href="https://github.com/Unazhang/College-Music-Trending" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+      <a href="https://github.com/ddavidjeong" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
           <ProjectCard
             title="Automated File Organizer"
             descriptions={[

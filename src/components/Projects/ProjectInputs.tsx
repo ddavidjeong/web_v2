@@ -11,7 +11,7 @@ function ProjectInputs() {
             stack={["Vite", "React", "Typescript", "Tailwind"]}
           />
       </a>
-      <a href="https://github.com/Unazhang/College-Music-Trending" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+      <a href="https://github.com/ddavidjeong" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
           <ProjectCard
             title="Dropshipping Verfication App"
             descriptions={[
@@ -32,7 +32,7 @@ function ProjectInputs() {
       </a>
 
 
-      <a href="https://github.com/Unazhang/College-Music-Trending" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+      <a href="https://github.com/ddavidjeong" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
           <ProjectCard
             title="Automated File Organizer"
             descriptions={[

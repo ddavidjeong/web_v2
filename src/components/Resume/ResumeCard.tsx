@@ -53,10 +53,10 @@ const ResumeCard: React.FC<ResumeCardProps> = ({
               fill="white"
             />
             <circle cx="10" cy="25" r="10" fill="white" />
-            {last_card && ( <polygon
+            {/* {last_card && ( <polygon
               points="10,297 17,275 3,275"
               fill="white"
-            />)}
+            />)} */}
            
           </svg>
         </div>
