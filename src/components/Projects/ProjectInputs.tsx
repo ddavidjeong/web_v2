@@ -36,9 +36,9 @@ function ProjectInputs() {
           <ProjectCard
             title="Automated File Organizer"
             descriptions={[
-              "Automated user file organization using file metadata analysis. Toying with S3 buckets, DynamoDB, and Lambda functions.",
+              "Automated user file organization using file metadata analysis. Toying with S3 buckets, RDS, and Lambda.",
             ]}
-            stack={["AWS","S3", "DynamoDB", "Lambdas"]}
+            stack={["AWS","S3", "RDS", "Lambdas"]}
           />
       </a>
       <a href="https://github.com/ddavidjeong/lease_rdbms" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
