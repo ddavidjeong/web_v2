@@ -9,7 +9,6 @@ interface ResumeCardProps {
   date_year: string;
   stack: string[];
   timeline_rect_height: number;
-  last_card: boolean
 }
 
 const ResumeCard: React.FC<ResumeCardProps> = ({
@@ -21,7 +20,6 @@ const ResumeCard: React.FC<ResumeCardProps> = ({
   date_year,
   stack,
   timeline_rect_height,
-  last_card
 }) => {
   return (
     <div className="md:grid md:grid-cols-10 text-white">

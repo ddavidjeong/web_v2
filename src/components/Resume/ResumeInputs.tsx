@@ -22,7 +22,6 @@ function Res() {
           "Leaflet",
         ]}
         timeline_rect_height={20}
-        last_card={false}
       />
       <ResumeCard
         company="Kay Family & Cosmetic Dentistry"
@@ -41,7 +40,6 @@ function Res() {
           "Bootstrap",
         ]}
         timeline_rect_height={0}
-        last_card={true}
       />
 
       {/* <svg
