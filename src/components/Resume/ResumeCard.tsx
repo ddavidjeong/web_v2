@@ -73,7 +73,7 @@ const ResumeCard: React.FC<ResumeCardProps> = ({
           {company}
         </div>
         <div className="font-light">{title}</div>
-        <ul className="font-light opacity-80 list-disc list-inside">
+        <ul className="font-light pt-2 opacity-80 ">
           {descriptions.map((desc, index) => (
             <li key={index}>{desc}</li>
           ))}
