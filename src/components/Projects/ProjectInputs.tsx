@@ -30,7 +30,14 @@ function ProjectInputs() {
             stack={["Python", "SQL", "Postman"]}
           />
       </a>
-
+      <a href="https://nbviewer.org/github/ddavidjeong/film_revenue_analysis/blob/main/box_office.ipynb" target="_blank" rel="noopener noreferrer" className="cursor-pointer ">
+          <ProjectCard
+            title="Film Revenue Analysis"
+            descriptions={[
+            "An analytical study to determine how to maximize profit when pitching a new film project"]}
+            stack={["Python", "NumPy", "pandas", "seaborn", "Matplotlib", "seaborn"]}
+          />
+      </a>
 
       <a href="https://github.com/ddavidjeong" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
           <ProjectCard
@@ -41,6 +48,7 @@ function ProjectInputs() {
             stack={["AWS","S3", "RDS", "Lambdas"]}
           />
       </a>
+      
       <a href="https://github.com/ddavidjeong/lease_rdbms" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
           <ProjectCard
             title="Habitu"
