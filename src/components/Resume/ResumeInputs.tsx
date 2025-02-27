@@ -10,7 +10,7 @@ function Res() {
         date_month_end="August"
         date_year="2023"
         descriptions={[
-          "Data integration and scrapping, automation scripts, visualization UI"
+          "ETL pipelines, Data scrapping, Automation scripts, Visualization UI"
         ]}
         stack={[
           "Python",

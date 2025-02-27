@@ -11,16 +11,16 @@ const Contact = () => {
 
         {/* body */}
         <div className="col-span-2  font-light opacity-90 text-white">
-          <div className="bg-s-p-1 mb-6" style={{}}>
-            <span className="bg-clip-text text-white text-3xl font-bold hover:text-transparent duration-300">
+          <div className="bg-s-p-1 mb-3 text-center" style={{}}>
+            <span className="bg-clip-text  text-white text-[25px] font-bold hover:text-transparent duration-300">
               let's connect!
             </span>
           </div>
-          <div className="font-light pb-4">
+          <div className="font-light text-center pb-4">
             feel free to contact me through any of my social
             links or simply send me an email. 
           </div>
-          <div className="flex">
+          <div className="flex items-center justify-center">
             <span className=" mr-4">
               <Github />
             </span>
@@ -34,10 +34,12 @@ const Contact = () => {
             <span className=" mr-4">
               <Instagram />
             </span>
+            <div className="mr-4 ml-2"> | </div>
+            <div className="font-light">
+          davidsjeo@gmail.com
           </div>
-          <div className="font-light pt-2 pb-2">
-            davidsjeo@gmail.com
           </div>
+          
         </div>
         <div className="col-span-1">
           {/* <div className="text-[10px] "> filler</div> */}

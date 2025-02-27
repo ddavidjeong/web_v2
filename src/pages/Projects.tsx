@@ -14,7 +14,7 @@ const Projects = () => {
           >
             <span
               style={{ backgroundImage: `url(${car_bg})` }}
-              className="md:col-span-1 bg-clip-text text-white text-5xl md:text-6xl font-bold hover:text-transparent duration-300"
+              className="md:col-span-1 bg-clip-text text-white text-5xl md:text-5xl font-bold hover:text-transparent duration-300"
             >
               projects
             </span>

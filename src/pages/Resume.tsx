@@ -17,7 +17,7 @@ const Resume = () => {
           >
             <span
               style={{ backgroundImage: `url(${car_bg})` }}
-              className="bg-clip-text md:col-span-1 text-white md:text-6xl text-5xl font-bold hover:text-transparent duration-300"
+              className="bg-clip-text md:col-span-1 text-white md:text-5xl text-5xl font-bold hover:text-transparent duration-300"
             >
               experience
             </span>

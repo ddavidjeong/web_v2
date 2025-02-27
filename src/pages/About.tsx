@@ -11,7 +11,7 @@ const About = () => {
           <div className="bg-s-p-1 mb-6" style={{}}>
             <span
               style={{ backgroundImage: `url(${car_bg})` }}
-              className="bg-clip-text text-white text-5xl md:text-6xl font-bold hover:text-transparent duration-300"
+              className="bg-clip-text text-white text-5xl md:text-5xl font-bold hover:text-transparent duration-300"
             >
               about me
             </span>
