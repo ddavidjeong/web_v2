@@ -8,18 +8,15 @@ const About = () => {
 
         {/* body */}
         <div className="col-span-1 md:col-span-2  font-light opacity-90 text-white">
-          <div className="bg-s-p-1 mb-6" style={{}}>
+          <div className="bg-s-p-1 mb-2" style={{}}>
             <span
               style={{ backgroundImage: `url(${car_bg})` }}
-              className="bg-clip-text text-white text-5xl md:text-5xl font-bold hover:text-transparent duration-300"
+              className="bg-clip-text text-white text-[40px] font-bold hover:text-transparent duration-300"
             >
               about me
             </span>
           </div>
 
-
-          <p className="mb-6">
-          </p>
           <p className="mb-6 ">
             I'm a developer passionate about creating
             user-centric experiences, packaged with

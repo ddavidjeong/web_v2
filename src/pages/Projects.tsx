@@ -10,11 +10,11 @@ const Projects = () => {
         <div className="md:col-span-1"></div>
         <div className="text-white md:col-span-2 ">
           <div
-            className="bg-s-p-1 mb-8 md:grid md:grid-cols-2 "
+            className="bg-s-p-1 mb-5 md:grid md:grid-cols-2 "
           >
             <span
               style={{ backgroundImage: `url(${car_bg})` }}
-              className="md:col-span-1 bg-clip-text text-white text-5xl md:text-5xl font-bold hover:text-transparent duration-300"
+              className="md:col-span-1 bg-clip-text text-white text-[40px] leading-none font-bold hover:text-transparent duration-300"
             >
               projects
             </span>

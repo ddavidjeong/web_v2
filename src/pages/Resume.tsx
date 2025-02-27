@@ -12,12 +12,12 @@ const Resume = () => {
         {/* desktop main column */}
         <div className="col-span-1 md:col-span-2 md:pr-4">
           <div
-            className="bg-s-p-1 mb-8 md:grid md:grid-cols-2"
+            className="bg-s-p-1 mb-5 md:grid md:grid-cols-2"
             style={{}}
           >
             <span
               style={{ backgroundImage: `url(${car_bg})` }}
-              className="bg-clip-text md:col-span-1 text-white md:text-5xl text-5xl font-bold hover:text-transparent duration-300"
+              className="bg-clip-text md:col-span-1 text-white text-[40px] leading-none font-bold hover:text-transparent duration-300"
             >
               experience
             </span>

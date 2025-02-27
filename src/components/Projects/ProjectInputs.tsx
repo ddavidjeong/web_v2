@@ -11,13 +11,13 @@ function ProjectInputs() {
             stack={["Vite", "React", "Typescript", "Tailwind"]}
           />
       </a>
-      <a href="https://github.com/ddavidjeong" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+      <a href="https://github.com/ddavidjeong/kanban_board" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
           <ProjectCard
-            title="Dropshipping Verfication App"
+            title="Kanban Board"
             descriptions={[
-              "Vertification tool that collects data using SERP APIs to tag products on Amazon to verify is product is dropshipped. ",
+              "Real-time, drag-and-drop Kanban board with task editing, prioritization, and status tracking",
             ]}
-            stack={["React", "Node.js", "PostgreSQL"]}
+            stack={["React", "Node.js", "Javascript", "PostgreSQL"]}
           />
       </a>
 
@@ -38,22 +38,12 @@ function ProjectInputs() {
             stack={["Python", "NumPy", "pandas", "seaborn", "Matplotlib", "seaborn"]}
           />
       </a>
-
-      <a href="https://github.com/ddavidjeong" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
-          <ProjectCard
-            title="Automated File Organizer"
-            descriptions={[
-              "Automated user file organization using file metadata analysis. Toying with S3 buckets, RDS, and Lambda.",
-            ]}
-            stack={["AWS","S3", "RDS", "Lambdas"]}
-          />
-      </a>
       
       <a href="https://github.com/ddavidjeong/lease_rdbms" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
           <ProjectCard
             title="Habitu"
             descriptions={[
-              "Subleasing platform for local college students using Apache and MySQL for backend",
+              "Subleasing platform for local college students using Apache for frontend and MySQL for backend",
             ]}
             stack={["Java","Apache", "MySQL"]}
           />
