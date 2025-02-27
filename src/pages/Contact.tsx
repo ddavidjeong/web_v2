@@ -12,7 +12,7 @@ const Contact = () => {
         {/* body */}
         <div className="col-span-2  font-light opacity-90 text-white">
           <div className="bg-s-p-1 mb-3 text-center" style={{}}>
-            <span className="bg-clip-text  text-white text-[25px] font-bold hover:text-transparent duration-300">
+            <span className="bg-clip-text  text-white text-[25px] font-bold opacity-100 hover:opacity-70 duration-300">
               let's connect!
             </span>
           </div>
