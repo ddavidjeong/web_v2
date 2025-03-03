@@ -1,3 +1,3 @@
 ### learning typescript
 
-### [deployed at ](https://davidsjeo.com/)
+### [website link](https://davidsjeo.com/)
