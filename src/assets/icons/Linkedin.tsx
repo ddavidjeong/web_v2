@@ -2,7 +2,7 @@
 function Linkedin() {
   return (
     <a
-      className="flex hover:text-slate-200 transition duration-200"
+      className="flex hover:text-slate-200 hover:dark:text-stone-800 transition duration-200"
       href="https://www.linkedin.com/in/davidsjeo/"
       target="_blank"
       rel="noreferrer noopener"

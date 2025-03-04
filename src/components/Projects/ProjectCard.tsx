@@ -16,9 +16,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         style={{  borderBottom: "1px solid rgb(120, 120, 120, .2)" }}>
      
       <div
-        className=""
+        className="dark:text-stone-700"
       >
-        <div className="text-white opacity-85 group-hover:opacity-100 duration-200 text-[16px]">
+        <div className="text-white dark:text-stone-700 opacity-85 group-hover:opacity-100 duration-200 text-[16px]">
           {title}
         </div>
         <ul className="font-light text-[14px] opacity-75 mt-2 ">
@@ -31,7 +31,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           {stack.map((tech, index) => (
             <span
               key={index}
-              className="bg-s-a-1 text-black rounded-2xl px-3 py-1 text-xs"
+              className="bg-s-a-1 text-black dark:text-white dark:bg-stone-500 rounded-2xl px-3 py-1 text-xs"
             >
               {tech}
             </span>

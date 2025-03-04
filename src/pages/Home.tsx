@@ -1,7 +1,7 @@
 import  { useRef } from "react";
 import About from "./About";
 import Resume from "./Resume";
-import Cover from "./Cover";
+import Cover from "./Cover/Cover";
 import Contact from "./Contact";
 import Projects from "./Projects";
 import Footer from "./Footer";
@@ -24,9 +24,12 @@ const Home = () => {
         contactRef={contactRef}
       />
 
-      <section ref={coverRef}>
-        <Cover />
-      </section>
+        <section ref={coverRef}>
+          <Cover />
+        </section>
+      
+
+
       <section ref={aboutRef}>
         <About />
       </section>

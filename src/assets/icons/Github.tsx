@@ -2,7 +2,7 @@
 function Github() {
   return (
     <a
-      className="block hover:text-slate-200 duration-200 transition"
+      className="block hover:text-slate-200  hover:dark:text-stone-800 duration-200 transition"
       href="https://github.com/ddavidjeong"
       target="_blank"
       rel="noreferrer noopener"

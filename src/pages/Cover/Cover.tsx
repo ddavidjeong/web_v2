@@ -1,12 +1,13 @@
 import "./CoverPage.css";
 
 const Cover = () => {
+
   return (
-    <div className="bg-s-p-1 w-full h-screen p-4 min-h-screen md:p-8">
+    <div className="bg-s-p-1 dark:bg-stone-200 w-full h-screen p-4 min-h-screen md:p-8">
       <div className="grid grid-cols-1 md:grid-cols-4">
         <div className="md:col-span-1"></div>
         <div className="col-span-1 md:col-span-2">
-          <section className="text-white font-bold md:text-5xl text-3xl ">
+          <section className="text-white dark:text-stone-600 font-bold md:text-5xl text-3xl ">
             <div className="pt-12 pb-12 text-line text-line-1">
               hi! welcome to my website.
             </div>
@@ -31,12 +32,12 @@ const Cover = () => {
               lifelong student.
             </div>
           </section>
-          <div className="text-white md:text-md text-md font-light text-line text-line-8">
+          <div className="text-white dark:text-stone-600 md:text-md text-md font-light text-line text-line-8">
             This is my personal website, a space I created
             where you can learn a little bit more about me.
           </div>
 
-          <svg className="hidden md:block arrows w-6 h-6 md:w-8 md:h-8 text-line text-line-9">
+          <svg className="block sm:block lg:block arrows w-6 h-6 md:w-8 md:h-8 text-line text-line-9">
             <path
               className="a1"
               d="M0 0 L30 32 L60 0"

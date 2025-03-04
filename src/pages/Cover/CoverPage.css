@@ -67,3 +67,11 @@
 	
 }
 
+.dark .arrows path {
+	stroke: #4a4a4a;
+	fill: transparent;
+	stroke-width: 2px;	
+	
+}
+
+
