@@ -35,29 +35,28 @@ const ResumeCard: React.FC<ResumeCardProps> = ({
           </div>
         </div>
 
-
         <div className="md:col-span-1  ">
           <svg
-            width="20" 
-            height="100" 
+            width="20"
+            height="100"
             xmlns="http://www.w3.org/2000/svg"
-            className="md:h-full md:my-auto relative z-40" 
+            className="md:h-full md:my-auto relative z-40"
           >
             <rect
               width="2"
-              height="1000" 
-              x="9" 
+              height="1000"
+              x="9"
               y={timeline_rect_height}
               className="fill-white dark:fill-stone-600"
             />
-            <circle cx="10" cy="25" r="10" className="fill-white dark:fill-stone-700" />
-           
-           
+            <circle
+              cx="10"
+              cy="25"
+              r="10"
+              className="fill-white dark:fill-stone-700"
+            />
           </svg>
         </div>
-        
-
-       
       </div>
 
       {/* mobile dates */}
@@ -65,7 +64,10 @@ const ResumeCard: React.FC<ResumeCardProps> = ({
         {date_month_start} - {date_month_end} {date_year}{" "}
       </div>
 
-      <div className="relative z-10 md:col-span-8 dark:text-stone-600 text-gray-200 md:p-3 mb-16 group md:hover:bg-white md:hover:bg-opacity-10 md:hover:shadow-lg rounded-md duration-200">
+      <div className="relative z-10 md:col-span-8 dark:text-stone-600 text-gray-200 md:p-3 mb-16 group 
+      md:hover:bg-white md:hover:bg-opacity-10 md:hover:shadow-lg 
+      md:hover:dark:bg-stone-300  md:hover:dark:bg-opacity-80
+      rounded-md duration-200">
         <div className="font-bold  group-hover:text-white group-hover:dark:text-stone-900 duration-200">
           {company}
         </div>

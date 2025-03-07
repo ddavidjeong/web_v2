@@ -12,7 +12,7 @@ export const DarkModeProvider:React.FC<{children: ReactNode}> = ({children}) => 
 
     useEffect(() => {
         const isSystemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        setDarkMode(isSystemDark);
+        setDarkMode(!isSystemDark);
 }, []);
 
     const toggleDarkMode = () => {

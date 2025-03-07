@@ -12,7 +12,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   stack,
 }) => {
   return (
-    <div className="block group p-4  hover:bg-white hover:bg-opacity-10 hover:shadow-lg duration-200"
+    <div className="block group p-4  hover:bg-white hover:dark:bg-stone-300 hover:dark:bg-opacity-80 hover:bg-opacity-10 hover:shadow-lg duration-200"
         style={{  borderBottom: "1px solid rgb(120, 120, 120, .2)" }}>
      
       <div
