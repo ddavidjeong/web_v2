@@ -12,7 +12,7 @@
   
   .text-line {
     opacity: 0;
-    animation: fadeIn 0.8s ease forwards;
+    animation: fadeIn 0.7s ease forwards;
   }
   
   .text-line-1 {
@@ -24,40 +24,39 @@
   }
   
   .text-line-3 {
-    animation-delay: 2.4s;
+    animation-delay: 2.2s;
   }
   
   .text-line-4 {
-    animation-delay: 3s;
+    animation-delay: 2.8s;
   }
   
   .text-line-5 {
-    animation-delay: 3.6s;
+    animation-delay: 3.4s;
   }
   
   .text-line-6 {
-    animation-delay: 4.2s;
+    animation-delay: 4.0s;
   }
   
   .text-line-7 {
-    animation-delay: 4.8s;
+    animation-delay: 4.6s;
   }
   
   .text-line-8 {
-    animation-delay: 5.8s;
+    animation-delay: 5.6s;
   }
   .text-line-9 {
-    animation-delay:7.5s;
+    animation-delay:6.6s;
   }
   
 
   .arrows {
 	width: 20vw;
-	height: 72px;
-	position: absolute;
-	left: 50%;
-	margin-left: -30px;
-	bottom: 70px;
+	height: 12vh;
+	position: relative;
+	margin-left: auto;
+  margin-right: auto;
 }
 
 .arrows path {
