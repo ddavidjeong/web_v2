@@ -8,7 +8,7 @@ const Cover = () => {
         <div className="col-span-1 md:col-span-2 flex flex-col justify-between">
           <div>
             <section className="text-white dark:text-stone-600 font-bold md:text-5xl text-3xl">
-              <div className="pt-12 pb-12 text-line text-line-1">
+              <div className="pt-4 lg:pt-12 pb-12 text-line text-line-1">
                 hi! welcome to my website.
               </div>
               <div className="pb-12 text-line text-line-2">
@@ -36,7 +36,7 @@ const Cover = () => {
           </div>
           
           <svg
-            className="w-[20vw] max-w-[60px] h-[12vh] mx-auto [&_path]:stroke-white [&_path]:fill-transparent [&_path]:stroke-2 dark:[&_path]:stroke-[#4a4a4a] text-line text-line-9 mb-4"
+            className="w-[20vw] max-w-[60px] h-[12vh] mx-auto [&_path]:stroke-white [&_path]:fill-transparent [&_path]:stroke-2 dark:[&_path]:stroke-[#4a4a4a] text-line text-line-9 mb-24 lg:mb-4"
             viewBox="0 0 60 120"
           >
           
