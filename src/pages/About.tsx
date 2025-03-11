@@ -7,7 +7,7 @@ const About = () => {
         <div className="md: col-span-1"></div>
 
         {/* body */}
-        <div className="col-span-1 dark:text-stone-600 md:col-span-2  font-light opacity-90 text-white">
+        <div className="col-span-1 md:col-span-2  text-white dark:text-stone-600 ">
           <div
             className="bg-s-p-1 dark:bg-stone-200 mb-2"
             style={{}}
@@ -20,7 +20,7 @@ const About = () => {
             </span>
           </div>
 
-          <section className="text-white dark:text-stone-700">
+          <section className="text-white  font-light dark:text-stone-700">
             <p className="mb-6 opacity-75 ">
               I'm a developer passionate about creating
               user-centric experiences, packaged with
@@ -58,7 +58,7 @@ const About = () => {
             <span>
               <a
                 href="mailto:davidsjeo@gmail.com"
-                className="font-medium opacity-100 hover:text-f-alt-3 hover:dark:text-stone-900 duration-300"
+                className="font-normal opacity-100 hover:text-f-alt-3 hover:dark:text-stone-900 duration-300"
               >
                 {" "}
                 davidsjeo@gmail.com
