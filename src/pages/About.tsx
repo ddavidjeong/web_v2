@@ -65,7 +65,7 @@ const About = () => {
               </a>
             </span>{" "}
             <span className="opacity-75">
-              or through any of my social links
+              or through any of my social links.
             </span>
           </section>
         </div>
