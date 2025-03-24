@@ -6,9 +6,9 @@ const Cover = () => {
       <div className="grid grid-cols-1 md:grid-cols-4 flex-grow">
         <div className="md:col-span-1"></div>
         <div className="col-span-1 md:col-span-2 flex flex-col justify-between">
-          <div>
+          <div className="mr-auto ml-auto">
             <section className="text-zinc-300 dark:text-stone-600 font-bold md:text-5xl text-3xl">
-              <div className="pt-4 lg:pt-12 pb-12 text-line text-line-1">
+              <div className="pt-4 lg:pt-36 pb-12 text-line text-line-1">
                 hi! welcome to my website.
               </div>
               <div className="pb-12 text-line text-line-2">
